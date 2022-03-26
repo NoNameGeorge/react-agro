@@ -1,54 +1,112 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "email": "Sincere@april.biz",
-            "password": "RErifq7EJMkye22"
-        },
-        {
-            "id": 2,
-            "email": "Shanna@melissa.tv",
-            "password": "iXro7aDsWIPvvHH"
-        },
-        {
-            "id": 3,
-            "email": "Nathan@yesenia.net",
-            "password": "WLUcjxNRGeRdwlc"
-        },
-        {
-            "id": 4,
-            "email": "Julianne.OConner@kory.org",
-            "password": "lPmHvNsLicw0C2v"
-        },
-        {
-            "id": 5,
-            "email": "Lucio_Hettinger@annie.ca",
-            "password": "gogi7s6YExE5MIA"
-        },
-        {
-            "id": 6,
-            "email": "Karley_Dach@jasper.info",
-            "password": "TGNp6DMhdlNlGHq"
-        },
-        {
-            "id": 7,
-            "email": "Telly.Hoeger@billy.biz",
-            "password": "trAKP2eAvj11jee"
-        },
-        {
-            "id": 8,
-            "email": "Sherwood@rosamond.me",
-            "password": "cezvosFC0Cqq1hp"
-        },
-        {
-            "id": 9,
-            "email": "Chaim_McDermott@dana.io",
-            "password": "PTU8g2PFSAkgVoB"
-        },
-        {
-            "id": 10,
-            "email": "Rey.Padberg@karina.biz",
-            "password": "X4zdfgKKSLw5qcn"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "email": "Sincere@april.biz",
+      "password": "RErifq7EJMkye22"
+    },
+    {
+      "id": 2,
+      "email": "Shanna@melissa.tv",
+      "password": "iXro7aDsWIPvvHH"
+    },
+    {
+      "id": 3,
+      "email": "Nathan@yesenia.net",
+      "password": "WLUcjxNRGeRdwlc"
+    },
+    {
+      "id": 4,
+      "email": "Julianne.OConner@kory.org",
+      "password": "lPmHvNsLicw0C2v"
+    },
+    {
+      "id": 5,
+      "email": "Lucio_Hettinger@annie.ca",
+      "password": "gogi7s6YExE5MIA"
+    },
+    {
+      "id": 6,
+      "email": "Karley_Dach@jasper.info",
+      "password": "TGNp6DMhdlNlGHq"
+    },
+    {
+      "id": 7,
+      "email": "Telly.Hoeger@billy.biz",
+      "password": "trAKP2eAvj11jee"
+    },
+    {
+      "id": 8,
+      "email": "Sherwood@rosamond.me",
+      "password": "cezvosFC0Cqq1hp"
+    },
+    {
+      "id": 9,
+      "email": "Chaim_McDermott@dana.io",
+      "password": "PTU8g2PFSAkgVoB"
+    },
+    {
+      "id": 10,
+      "email": "Rey.Padberg@karina.biz",
+      "password": "X4zdfgKKSLw5qcn"
+    }
+  ],
+  "polygons": [
+    {
+      "id": "b1e4acac9a8bee76a39fe6df6d4a96dc",
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              37.480783555548385,
+              55.853736685615644
+            ],
+            [
+              37.49468812708159,
+              55.866260791630054
+            ],
+            [
+              37.500181291144116,
+              55.835328559372385
+            ],
+            [
+              37.480783555548385,
+              55.853736685615644
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    },
+    {
+      "id": "3f7596ac5087f9349473e3e6fc83fca0",
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              37.472618920899066,
+              55.86553232460636
+            ],
+            [
+              37.4846352172855,
+              55.8800747603774
+            ],
+            [
+              37.50695119628935,
+              55.864761712516554
+            ],
+            [
+              37.472618920899066,
+              55.86553232460636
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    }
+  ]
 }
