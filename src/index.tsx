@@ -5,6 +5,9 @@ import { Provider } from 'react-redux';
 
 import store from './redux/store';
 
+import 'mapbox-gl/dist/mapbox-gl.css';
+import './scss/app.scss'
+
 import App from './App';
 
 ReactDOM.render(

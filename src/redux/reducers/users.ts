@@ -2,8 +2,8 @@ const initialState = {
     isAuth: false
 };
 
-const users = (state = initialState, action) => {
-    switch (action.type) {
+const users = (state = initialState, action: object) => {
+    switch (action) {
 
         default:
             return state;
