@@ -3,20 +3,19 @@
   margin: 0;
   list-style: none;
   outline: none;
-  font-family: "Proxima Nova", Roboto, system-ui, Tahoma, sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: 16px;
-  @media (max-width: 1300px) {
-    font-size: calc(14px + 2 * ((100vw - 768px) / (1300 - 768)));
-  }
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
+  // @media (max-width: 1300px) {
+  //   font-size: calc(12px + 2 * ((100vw - 768px) / (1300 - 768)));
+  // }
 }
 
 body {
