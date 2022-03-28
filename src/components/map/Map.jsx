@@ -2,7 +2,6 @@ import React from 'react';
 import useDebounce from './../../hooks/use-debounce';
 import mapboxgl from 'mapbox-gl';
 import MapboxDraw from "@mapbox/mapbox-gl-draw";
-import { area } from '@turf/turf'
 
 import dateImage from './../../assets/Icon.png'
 import sunImage from './../../assets/sun.png'

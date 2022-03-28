@@ -26,14 +26,12 @@ const Categories = ({ items }) => {
                     isVisible &&
                     <div className="list__items">
                         {items.map((item, index) => {
-                            if (index !== activeIndex) {
-                                return <div
-                                    className="list__item"
-                                    onClick={() => handleActiveItem(index)}
-                                >
-                                    {item}
-                                </div>
-                            }
+                            return <div
+                                className="list__item"
+                                onClick={() => handleActiveItem(index)}
+                            >
+                                {item}
+                            </div>
                         })}
                     </div>
                 }

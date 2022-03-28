@@ -10,7 +10,6 @@ const Form = () => {
     const [activeTitle, setActiveTitle] = React.useState(0)
     const titles = ['Вход', 'Регистрация']
 
-
     return (
         <div className='form-wrapper'>
             <div className="form-inner">
@@ -36,7 +35,6 @@ const Form = () => {
                             </div>
                         })}
                     </div>
-
                     <Input
                         text='Email...'
                         image={mailImage}
@@ -54,7 +52,7 @@ const Form = () => {
                         text='Войти'
                         className='form-button'
                     />
-                        <div className="form-forget">Забыли пароль?</div>
+                    <div className="form-forget">Забыли пароль?</div>
                 </div>
             </div>
         </div>
