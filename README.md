@@ -8,3 +8,6 @@
 - ReactJS (useState, useReducer, useEffect)
 - React Router
 - SASS (SCSS)
+
+
+# npm i -> npm run start -> successful launch
