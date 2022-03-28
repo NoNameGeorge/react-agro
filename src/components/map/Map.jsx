@@ -14,7 +14,6 @@ import plusImage from './../../assets/plus.png'
 mapboxgl.accessToken = 'pk.eyJ1Ijoibm5nZW9yZ2UiLCJhIjoiY2wxN3Z2cm5zMGZ2bjNkcDl5cW5ncTc3dSJ9.Nnkj7s2bIsxkX_lQ0dwsRQ';
 const weatherAPI = '3cd60311a8475c5f5792d22b55c4c476'
 
-
 const Map = () => {
     const mapContainer = React.useRef(null);
     const map = React.useRef(null);
@@ -37,12 +36,12 @@ const Map = () => {
     }, [debouncedLng, debouncedLat])
 
     const getWeather = (lng, lat) => {
-      // fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${weatherAPI}`)
-      //   .then(response => response.json())
-      //   .then(data => {
-      //     setWeather(data)
-      //   })
-      //   .catch(e => console.log('Ошибка - ', e))
+      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${weatherAPI}`)
+        .then(response => response.json())
+        .then(data => {
+          setWeather(data)
+        })
+        .catch(e => console.log('Ошибка - ', e))
     }
 
     // Создание полей
