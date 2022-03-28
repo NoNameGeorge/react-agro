@@ -18,13 +18,11 @@ const Map = () => {
     const mapContainer = React.useRef(null);
     const map = React.useRef(null);
     const draw = React.useRef(null);
-    const polygonItems = React.useRef([]);
   
     const [lng, setLng] = React.useState(37.44);
     const [lat, setLat] = React.useState(55.85);
     const [zoom, setZoom] = React.useState(9);
     const [weather, setWeather] = React.useState(null)
-    // const [polygons, setPolygons] = React.useState([])
 
     // Обновление погоды, когда происходит фиксация карты (на 0.5 секунд)
     const debouncedLng = useDebounce(lng, 500)
@@ -44,31 +42,6 @@ const Map = () => {
         })
         .catch(e => console.log('Ошибка - ', e))
     }
-
-    // Создание полей
-    // const createArea = (e) => {
-    //   const newPolygons = [...polygonItems.current, ...e.features]
-    //   polygonItems.current = newPolygons
-    // }
-  
-    // Удаление поля
-    // const deleteArea = (e) => {
-    //   e.features.forEach(item => {
-    //     const newPolygons = polygonItems.current.filter((polygon) => item.id !== polygon.id)
-    //     polygonItems.current = newPolygons
-    //   })
-    // }
-     
-
-
-
-
-
-
-
-
-
-    
     // Отрисовка карты
     React.useEffect(() => {
       if (map.current) return;
@@ -90,9 +63,6 @@ const Map = () => {
       });
   
       map.current.addControl(draw.current);
-    //   map.current.on('draw.create', createArea);
-    //   map.current.on('draw.delete', deleteArea);
-    //   map.current.on('draw.update', updateArea);
   
       getWeather(lng, lat)
     }, []);
