@@ -1,7 +1,8 @@
 export { default as Form } from './Form'
 export { default as Logo } from './Logo'
-export { default as Button } from './Button'
+export { default as Button } from './button/Button'
 export { default as Input } from './Input'
 export { default as InputCheckbox } from './InputCheckbox'
 
 export { default as MapMenu } from './map/MapMenu'
+export { default as Map } from './map/Map'

@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Button from './Button';
-import Input from './Input';
+import { Button, Input } from './';
 
 import mailImage from './../assets/mail.png'
 import passwordImage from './../assets/key.png'
@@ -28,7 +27,7 @@ const Form = () => {
                         {titles.map((title, index) => {
                             const isActive = index === activeTitle ? 'active' : ''
 
-                            return <div 
+                            return <div
                                 key={title}
                                 className={`title ${isActive}`}
                                 onClick={() => setActiveTitle(index)}
@@ -51,8 +50,11 @@ const Form = () => {
                         text='Запомнить меня'
                         id='login-check'
                     />
-                    <Button text='Войти' className='form-button' />
-                    <div className="form-forget">Забыли пароль?</div>
+                    <Button
+                        text='Войти'
+                        className='form-button'
+                    />
+                        <div className="form-forget">Забыли пароль?</div>
                 </div>
             </div>
         </div>
