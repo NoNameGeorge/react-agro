@@ -16,7 +16,7 @@ import searchImage from './../../assets/Icon Search.png'
 import List from '../List';
 import Polygons from '../Polygons';
 
-const MapMenu = () => {
+const MapMenu = ({ onClick }) => {
     const categories = ['Все категории', 'Категория 1', 'Категория 2', 'Категория 3', 'Категория 4', 'Категория 5', 'Категория 6', 'Категория 7', 'Категория 8']
     const polygons = [{
         id: '123',
@@ -32,6 +32,10 @@ const MapMenu = () => {
         name: 'Поле #124',
         warning: true,
     }]
+
+    
+
+
 
     return (
         <>
@@ -74,7 +78,7 @@ const MapMenu = () => {
                     </ul>
                 </div>
                 <div className="map-menu__border"></div>
-                
+
                 <div className="map-menu__item active">
                     <div>
                         <div className="item-title">
@@ -87,6 +91,7 @@ const MapMenu = () => {
                     </div>
                     <Button
                         className='item-button fill'
+                        onClick={() => onClick()}
                         text='+ Добавить поле'
                         isFill
                     />

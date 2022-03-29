@@ -5,4 +5,3 @@ export { default as Input } from './Input'
 export { default as InputCheckbox } from './InputCheckbox'
 
 export { default as MapMenu } from './map/MapMenu'
-export { default as Map } from './map/Map'

@@ -4,10 +4,11 @@ import ButtonBorders from './ButtonBorders'
 
 import buttonImage from './../../assets/button.png'
 
-const Button = ({ text, className, isFill }) => {
+const Button = ({ text, className, isFill, onClick }) => {
     return (
         <button
             className={`button ${className}`}
+            onClick={onClick}
         >
             {text}
             
