@@ -1,6 +1,6 @@
 import React from 'react';
 import useDebounce from './../hooks/use-debounce';
-import mapboxgl from 'mapbox-gl';
+import mapboxgl from '!mapbox-gl'; /* eslint import/no-webpack-loader-syntax: off */
 import MapboxDraw from "@mapbox/mapbox-gl-draw";
 
 import 'mapbox-gl/dist/mapbox-gl.css';
@@ -10,7 +10,7 @@ import dateImage from './../assets/Icon.png'
 import sunImage from './../assets/sun.png'
 import warnImage from './../assets/warn.png'
 import rulerImage from './../assets/ruler.png'
-import minusImage from './../assets/minus.png'
+import minusImage from './../assets/minus.png' 
 import plusImage from './../assets/plus.png'
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoibm5nZW9yZ2UiLCJhIjoiY2wxN3Z2cm5zMGZ2bjNkcDl5cW5ncTc3dSJ9.Nnkj7s2bIsxkX_lQ0dwsRQ';
@@ -37,12 +37,12 @@ const Polygons = () => {
   }, [debouncedLng, debouncedLat])
 
   const getWeather = (lng, lat) => {
-    // fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${weatherAPI}`)
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     setWeather(data)
-    //   })
-    //   .catch(e => console.log('Ошибка - ', e))
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${weatherAPI}`)
+      .then(response => response.json())
+      .then(data => {
+        setWeather(data)
+      })
+      .catch(e => console.log('Ошибка - ', e))
   }
   // Отрисовка карты
   React.useEffect(() => {
@@ -60,7 +60,6 @@ const Polygons = () => {
     });
 
     map.current.addControl(draw.current);
-
 
     getWeather(lng, lat)
   }, []);
@@ -84,9 +83,6 @@ const Polygons = () => {
 
   // Перевод погоды в градусы Цельсия
   const currentTemp = weather?.main?.temp ? (weather.main.temp - 273.15).toFixed(2) : 'Error'
-
-
-
 
   return (
     <div className='map-wrapper'>
@@ -115,8 +111,6 @@ const Polygons = () => {
             </div>
           </div>
         </div>
-
-
         <div className="map-info">
           <div className="date">
             <span>24 Oct 2021</span>
